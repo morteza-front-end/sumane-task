@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir/Vazir-Thin.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir/Vazir-Thin.eot") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/vazir/Vazir-Thin.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir/Vazir-Thin.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir/Vazir-Thin.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/iranyekan/eot/iranyekanwebboldfanum.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebboldfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanwebboldfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanwebboldfanum.ttf") format("truetype");
+}
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 100;
+  src: ("../fonts/iranyekan/eot/iranyekanwebthinfanum.eot");
+  src: ("../fonts/iranyekan/eot/iranyekanwebthinfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanwebthinfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanwebthinfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/iranyekan/eot/iranyekanweblightfanum.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanweblightfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanweblightfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanweblightfanum.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/iranyekan/eot/iranyekanwebregularfanum.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebregularfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanwebregularfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/iranyekan/eot/iranyekanwebmediumfanum.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebmediumfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanwebmediumfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanwebmediumfanum.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/iranyekan/eot/iranyekanwebextraboldfanum.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebextraboldfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanwebextraboldfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanwebextraboldfanum.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/iranyekan/eot/iranyekanwebblackfanum.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebblackfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekan/woff/iranyekanwebblackfanum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekan/ttf/iranyekanwebblackfanum.ttf")
+      format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: iranyekan;
+  direction: rtl;
+  font-size: 14px;
+}
+.fn-1{
+    font-size: 14px;
+}
+.fn-2 {
+  font-size: 2rem;
+}
+.fn-3 {
+  font-size: 3rem;
+}
+.main {
+  width: 100%;
+
+}
+.bg-main {
+  background-image: linear-gradient(
+    to right,
+    rgba(70, 70, 70, 45%),
+    rgba(70, 70, 70, 100%)
+  );
+}
+.image_hand {
+  position: relative;
+  height: 100%;
+}
+.hand {
+  width: 50%;
+  position: relative;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 25%;
+  margin-right: 25%;
+  display: flex;
+}
+.mobile {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1/2.2;
+  top: 46.5%;
+  right: 49.5%;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .mobile {
+    top: 61.5%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1401px) {
+  .mobile {
+    top: 54%;
+  }
+}
+.card-custom {
+  background-color: transparent;
+  border: 1px solid rgba(252, 252, 252, 10%);
+  border-radius: 0.8rem;
+}
+.card-table{
+    display: flex;
+    padding: 0 15px 15px 15px;
+}
+.table > :not(:first-child){
+    border-top: none;
+}
+.btn-transparent{
+  transition: all 0.5s ease;
+}
+.btn-transparent:hover{
+   background-color: rgba(252, 252, 252, 10%);
+   color:#fff
+}
