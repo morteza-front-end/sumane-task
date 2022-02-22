@@ -61,7 +61,7 @@
               </p>
           </div>
       </div>
-      <div class="sum" v-if="table">
+      <div class="sum px-3" v-if="table">
         <sum :sum="sum"/>
       </div>
   </div>
