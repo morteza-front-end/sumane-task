@@ -1,34 +1,80 @@
 <template>
   <div class="sum">
-      <div class="card d-flex flex-row px-3 py-2">
-          <span> جمع کل: </span>
-          <span>{{sum}}</span>
-      </div>
-      <div class="buttons ">
-          <button class="btn btn-primary fn-1" :disabled="disable"> پرداخت </button>
-      </div>
+    <div class="card d-flex flex-row px-3 py-2">
+      <span> جمع کل: </span>
+      <span>{{ sum }}</span>
+    </div>
+    <div class="buttons">
+      <button
+        class="btn btn-primary fn-1"
+        @click="showModal = true"
+        :disabled="disable"
+      >
+        نمایش جزئیات
+      </button>
+    </div>
+    <Modal v-model="showModal">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">نام محصول</th>
+            <th scope="col">مدت اشتراک</th>
+            <th scope="col">تعداد</th>
+            <th scope="col">قیمت</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr  v-for="(item,index) in $store.state.cart" :key="index">
+            <th scope="row">{{ index+1 }}</th>
+            <td>{{ item.item }}</td>
+            <td>{{ item.period }}</td>
+            <td>{{ item.count }}</td>
+            <td>{{ item.count*item.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+       <div class="px-5 d-flex justify-content-between align-items-center">
+                 <span>جمع کل:</span>
+                 <span> {{sum}}</span>
+              </div>
+        <div class="buttons">
+            <div class="btn btn-primary">
+                پرداخت
+            </div>
+        </div>
+    </Modal>
   </div>
 </template>
 
 <script>
+import VueModal from "@kouts/vue-modal";
 export default {
-props:['sum'],
-computed:{
-    disable(){
-        if(this.sum>0){
-            return false
-        } else{
-            return true
-        }
-    }
-}
-
-}
+  data() {
+    return {
+      showModal: false,
+    };
+  },
+  props: ["sum"],
+  computed: {
+    disable() {
+      if (this.sum > 0) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+  },
+  components: {
+    Modal: VueModal,
+  },
+};
 </script>
 
 <style>
-.buttons{
-    margin: 15px 5px;
-    direction: ltr;
+.buttons {
+  margin: 15px 5px;
+  direction: ltr;
 }
 </style>
