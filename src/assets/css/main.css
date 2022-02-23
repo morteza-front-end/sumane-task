@@ -127,11 +127,7 @@ body {
 
 }
 .bg-main {
-  background-image: linear-gradient(
-    to right,
-    rgba(70, 70, 70, 45%),
-    rgba(70, 70, 70, 100%)
-  );
+  background-color: rgba(70, 70, 70, 80%);
 }
 .image_hand {
   position: relative;
@@ -156,7 +152,7 @@ body {
 }
 @media screen and (min-width: 990px) and (max-width: 1200px) {
   .mobile {
-    top: 48%;
+    top: 48.1%;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {

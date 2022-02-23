@@ -170,6 +170,7 @@ export default {
       let time = document.getElementById(`period${period}`).innerText;
       let element = event.target;
       element.classList.add("bg-success");
+       element.classList.add("text-white")
       element.classList.replace("rounded-0", "rounded-2");
       let data;
       let i = 0;
