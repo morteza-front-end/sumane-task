@@ -169,7 +169,7 @@ export default {
       let item = document.getElementById(`item${number}`).innerText;
       let time = document.getElementById(`period${period}`).innerText;
       let element = event.target;
-      element.classList.add("bg-success");
+      element.style.background='#FFC42E';
        element.classList.add("text-white")
       element.classList.replace("rounded-0", "rounded-2");
       let data;
