@@ -29,9 +29,9 @@
           <tr  v-for="(item,index) in $store.state.cart" :key="index">
             <th scope="row">{{ index+1 }}</th>
             <td>{{ item.item }}</td>
-            <td>{{ item.period }}</td>
-            <td>{{ item.count }}</td>
-            <td>{{ item.count*item.price }}</td>
+            <td class="pe-3">{{ item.period }}</td>
+            <td class="pe-3">{{ item.count }}</td>
+            <td class="pe-3">{{ item.count*item.price }}</td>
           </tr>
         </tbody>
       </table>
