@@ -7,8 +7,8 @@
   </div>
 </div>
   <div class="col-lg-8 col-sm-12 d-flex flex-column mb-5">
-   <card class="w-75 mx-auto mt-5 mb-3" :head="true" :title="`سامانه آهن`"  :text="`تعرفه ی اشتراک`" :table="false"/>
-    <card class="w-90 mx-auto" :head="false" :price="'5'" :table="true"/>
+   <card class="w-75 mx-auto mt-5 mb-3" :head="true" :title="`سامانه آهن`"  :text="` تعرفه اشتراک`" :table="false"/>
+    <card class="w-90 mx-auto" :head="false" :price="'18'" :table="true"/>
 </div>
 
 </div>

@@ -6,7 +6,7 @@
     </div>
     <div class="buttons">
       <button
-        class="btn btn-primary fn-1"
+        class="btn  bg-black text-white fn-1"
         @click="showModal = true"
         :disabled="disable"
       >
@@ -40,7 +40,7 @@
                  <span> {{sum}}</span>
               </div>
         <div class="buttons">
-            <div class="btn btn-primary">
+            <div class="btn bg-black text-white">
                 پرداخت
             </div>
         </div>

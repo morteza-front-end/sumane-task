@@ -150,19 +150,22 @@ body {
  
   border-radius: 1rem;
 }
+.bg-black{
+  background-color: #333333;
+}
 @media screen and (min-width: 990px) and (max-width: 1200px) {
   .mobile {
-    top: 48.1%;
+    top: 49.5%;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .mobile {
-    top: 38.5%;
+    top: 40%;
   }
 }
 @media screen and (min-width:1400px) {
   .mobile{
-    top: 28%;
+    top: 30.5%;
   }
 }
 .card-custom {

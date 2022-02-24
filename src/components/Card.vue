@@ -1,11 +1,11 @@
 <template>
   <div class="card-custom">
     <div
-      class="title fn-2 text-center d-flex align-items-center justify-content-center"
+      class="title fn-2 text-center d-flex align-items-center justify-content-center mt-3"
       v-if="head"
     >
-      <p class="text-dark">{{ text }}</p>
-      <p class="text-warning">{{ title }}</p>
+      <p class="text-dark text-bold">{{ text }}</p>
+      <p class="text-warning pe-1">{{ title }}</p>
     </div>
     <div class="card-table col-12" v-if="table">
       <div class="col-3 d-flex flex-column">
@@ -22,10 +22,10 @@
       <div
         class="col-3 d-flex align-items-center justify-content-center flex-column mt-2 mb-auto"
       >
-        <div class="btn btn-dark rounded-3" id="period1">1ماهه</div>
+        <div class="btn btn-dark rounded-3 px-6" id="period1">1ماهه</div>
         <div
           @click="sum_price(price, 1, 1)"
-          class="btn btn-transparent rounded-0 mt-1"
+          class="btn btn-transparent rounded-0 mt-1 "
         >
           {{ price }}میلیون
         </div>
@@ -63,7 +63,7 @@
       <div
         class="col-3 d-flex align-items-center justify-content-center flex-column mt-2 mb-auto"
       >
-        <div class="btn btn-dark rounded-3" id="period3">3ماهه</div>
+        <div class="btn btn-dark rounded-3  px-55" id="period3">3ماهه</div>
         <div
           @click="sum_price(price, 3, 1)"
           class="btn btn-transparent rounded-0 mt-1"
@@ -104,7 +104,7 @@
       <div
         class="col-3 d-flex align-items-center justify-content-center flex-column mt-2 mb-auto"
       >
-        <div class="btn btn-dark rounded-3" id="period6">6ماهه</div>
+        <div class="btn btn-dark rounded-3 px-55" id="period6">6ماهه</div>
         <div
           @click="sum_price(price, 6, 1)"
           class="btn btn-transparent rounded-0 mt-1"
@@ -200,5 +200,14 @@ export default {
   width: 10px;
   height: 10px;
   background: #ffcd39;
+}
+.text-bold{
+  font-weight: 800;
+}
+.px-6{
+  padding: 0.5rem 1.5rem !important;
+}
+.px-55{
+  padding: 0.5rem 1.4rem !important;
 }
 </style>
